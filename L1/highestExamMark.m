@@ -2,7 +2,7 @@
 opts = detectImportOptions('course_grades_2023.xlsx');
 opts = setvartype(opts, {'ID_Number', 'Name'}, 'string');
 table = readtable('course_grades_2023.xlsx', opts);
-
+disp(table)
 [name, exam_mark] = HEM(table);
 fprintf('The student with the highest exam mark is %s with a mark of %d\n', ...
     name, exam_mark);
