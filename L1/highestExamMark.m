@@ -3,9 +3,9 @@ opts = detectImportOptions('course_grades_2023.xlsx');
 opts = setvartype(opts, {'ID_Number', 'Name'}, 'string');
 table = readtable('course_grades_2023.xlsx', opts);
 
-[name, total_lab_mark] = HEM(table);
+[name, exam_mark] = HEM(table);
 fprintf('The student with the highest exam mark is %s with a mark of %d\n', ...
-    name, total_lab_mark);
+    name, exam_mark);
 
 function [name, exam_mark] = HEM(table)
     % extract exams to sum up each row
