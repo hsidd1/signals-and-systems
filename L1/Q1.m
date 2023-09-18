@@ -2,6 +2,9 @@ f = SimpleFunctions(); % instantiation of object of discrete time functions
 
 t = -10:10; % arbitrary time vector for plotting
 
+% student names and ids to be added to graphs
+student_ids = sprintf('Hamza Siddiqui 400407170\nJohnnathan Gershkovich 400408809'); 
+
 % -----------------Defining given discrete time signals-------------------%
 
 % (a) x[n] = u[n] −2u[n −1] + u[n −4]
@@ -25,6 +28,7 @@ title( ...
     ); % following pep8 in matlab
 xlabel('t');
 ylabel('x[n]');
+text(-9.5, -0.8, student_ids, 'FontSize', 9);
 
 figure(2);
 stem(t, b, "LineWidth", 3);
@@ -34,6 +38,7 @@ title( ...
     );
 xlabel('t');
 ylabel('x[n]');
+text(-9.5, 2.75, student_ids, 'FontSize', 9);
 
 figure(3);
 stem(t, c, "LineWidth", 3);
@@ -43,6 +48,7 @@ title( ...
     );
 xlabel('t');
 ylabel('x[n]');
+text(0.5, 1.8, student_ids, 'FontSize', 9);
 
 figure(4);
 stem(t, d, "LineWidth", 3);
@@ -52,3 +58,4 @@ title( ...
     );
 xlabel('t');
 ylabel('x[n]');
+text(-9, 2700, student_ids, 'FontSize', 9);
