@@ -49,4 +49,4 @@ xnT = [xnT1(1:2/Ts) xnT2(1:2/Ts) xnT3(1:2/Ts) xnT4(1:2/Ts)];
 % Save xnT as a wav sound file, soundfile.wav.
 audiowrite('soundfile_Q3.wav', xnT', fs);
 % Uncomment/edit this next line to save the graph.
-exportgraphics(gcf, 'Q2.jpg');
+exportgraphics(gcf, 'Q3.jpg');
